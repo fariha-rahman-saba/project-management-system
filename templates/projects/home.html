@@ -3,7 +3,7 @@
 {% load bootstrap_icons %}
 
 {% block title %}
-Project Management System - Home
+Argon - Home
 {% endblock %}
 
 {% block content %}
@@ -18,57 +18,10 @@ Project Management System - Home
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-dark text-muted">
-            <div class="container ">
-
-                <a class="navbar-brand" href="{% url 'project-home' %}">
-                    <img class="img-fluid rounded-circle" src="{% static 'projects/images/logo.jpg' %}" alt=""
-                        width="45" height="30">
-                </a>
-                <a class="navbar-brand fs-4 text-info" href="#">Argon</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Facilities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Packages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Comments</a>
-                        </li>
-
-
-
-                    </ul>
-
-
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-
-                </div>
-            </div>
-        </nav>
-
-
-
-        <section class="container">
+    <main>
+        <section>
             <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -103,19 +56,15 @@ Project Management System - Home
                 </button>
                 <div
                     class="carousel-caption d-none d-md-block d-flex flex-column justify-content-center align-items-center h-50">
-                    <h1 class="text-info fs-1 fw-bold">The perfect collaboration of your projects</h1>
-                    <p class="text-white">Join with us and get the best experience</p>
+                    <h1 class="text-dark fs-1 fw-bold">The perfect collaboration of your projects</h1>
+                    <p class="text-dark">Join with us and get the best experience</p>
 
                 </div>
             </div>
         </section>
-
-    </header>
-
-    <main>
         <!-- Facilities Section -->
 
-        <section class="container">
+        <section class="container " id="features">
             <h1 class="text-center fw-bold mb-5 mt-5">Best Facilities We Provide</h1>
             <p class="text-center mb-5">
                 Whether you are creating a project, collaborating with your team members its the best place
@@ -161,12 +110,13 @@ Project Management System - Home
 
         <!-- Package section -->
 
-        <section class="container mt-5 mb-5 text-center m-auto">
+        <section class="container mt-5 mb-5 text-center m-auto" id="pricing">
+
             <h3 class="text-center mb-5 fw-bold">Our Packages</h3>
             <div>
                 <div class="row">
-                    <div class="col-lg-3 ">
-                        <div class="card border-0">
+                    <div class="col-lg-4 ">
+                        <div class="card border-0 ">
                             <div class="card-body">
 
                                 <h3 class="fw-bold">$0</h3>
@@ -175,15 +125,16 @@ Project Management System - Home
                                     <small> For students in academic studies.<br> <br>
                                         <i class="far fa-check-circle text-primary"></i> Limited space access <br>
                                         <i class="far fa-check-circle text-primary"></i> Secuirty facility<br>
+                                        <br>
                                     </small>
                                 </p>
                                 <a href="#"
-                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-3"><small>Choose
+                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-4"><small>Choose
                                         plan</small></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="card border-0">
                             <div class="card-body">
 
@@ -199,12 +150,17 @@ Project Management System - Home
                                     </small>
                                 </p>
                                 <a href="#"
-                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-3"><small>Choose
+                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-4"><small>Choose
                                         plan</small></a>
+                                <span
+                                    class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger p-2">
+                                    Hot
+
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="card border-0 " id="hot-package">
                             <div class="card-body">
 
@@ -221,15 +177,10 @@ Project Management System - Home
                                     </small>
                                 </p>
                                 <a href="#"
-                                    class="btn btn-light rounded-pill d-flex align-items-center justify-content-center m-3"
-                                    style="color: #ffc2c2;"><small>Choose
+                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-2"><small>Choose
                                         plan</small></a>
 
-                                <span
-                                    class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger p-2">
-                                    Hot
 
-                                </span>
 
                             </div>
                         </div>
@@ -241,127 +192,7 @@ Project Management System - Home
     </main>
 
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-dark text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
 
-            <!-- Right -->
-            <div>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3 text-secondary"></i>Argon
-                        </h6>
-                        <p>
-                            The best place to organize your project.
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Products
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Angular</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">React</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Vue</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Laravel</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Pricing</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Settings</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3 text-secondary"></i> Jahangirnagar University, Savar, Dhaka.</p>
-                        <p>
-                            <i class="fas fa-envelope me-3 text-secondary"></i>
-                            sabarahman.official@gmail.com
-                        </p>
-
-                        <p><i class="fas fa-print me-3 text-secondary"></i> +8801730850444</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-            </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2022 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">argon.com.bd</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
 
 
 </body>
