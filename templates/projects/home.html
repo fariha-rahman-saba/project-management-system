@@ -1,0 +1,251 @@
+{% extends "projects/base.html" %}
+{% load static %}
+
+{% block title %}
+Project Management System - Home
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark fluid text-white">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">Argon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+
+
+
+                    </ul>
+
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'projects/images/banner.png' %}" width="1440px" height="470px" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h1 class="fw-bold">The perfect venue for your next event</h1>
+                        <p>Join with us and get the best experience</p>
+                        <div class="text-center mt-2 mb-2">
+                            <a href="https://web.programming-hero.com/" target="_blank"
+                                class="btn btn-primary rounded px-5 py-2"><small>Book
+                                    now</small></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'projects/images/banner-2.jpg' %}" width="1440px" height="470px" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h1 class="fw-bold">The perfect venue for your next event</h1>
+                        <p>Join with us and get the best experience</p>
+                        <div class="text-center mt-2 mb-2">
+                            <a href="https://web.programming-hero.com/" target="_blank"
+                                class="btn btn-primary rounded px-5 py-2"><small>Book
+                                    now</small></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'projects/images/banner-3.jpg' %}" width="1440px" height="470px" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h1 class="fw-bold">The perfect venue for your next event</h1>
+                        <p>Join with us and get the best experience</p>
+                        <div class="text-center mt-2 mb-2">
+                            <a href="https://web.programming-hero.com/" target="_blank"
+                                class="btn btn-primary rounded px-5 py-2"><small>Book
+                                    now</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Facilities Section -->
+
+        <section class="container">
+            <h1 class="text-center fw-bold mb-5 mt-5">Best Facilities we Provide</h1>
+            <p class="text-center mb-5">
+                Whether you are organizing a Wedding, a Business RelatedMeeting, or you are looking for the Helicopter
+                sightseeing ride,the Hotel offers a surplusof meeting packageswith ourexceptional conference facility up
+                to 1,000 guests. Well positioned our hotel in the forefront of nice destination.
+            </p>
+            <div class="row gx-5 gy-5">
+                <div class=" col-lg-4 ">
+                    <img width="380px" height="250px" src="images/deluxe.jpg" alt="">
+                    <h5 class="text-center mt-2">Easier than ever</h5>
+                </div>
+                <div class="col-lg-4 ">
+                    <img width="380px" height="250px" src="images/pool.jpg" alt="">
+                    <h5 class="text-center mt-2">Swimming Pool</h5>
+                </div>
+                <div class="col-lg-4">
+                    <img width="380px" height="250px" src="images/conference.jpg" alt="">
+                    <h5 class="text-center mt-2">Sky View Conference</h5>
+                </div>
+
+                <div class="col-lg-4 ">
+                    <img width="380px" height="250px" src="images/loundry.jpg" alt="">
+                    <h5 class="text-center mt-2">SLoundry</h5>
+                </div>
+                <div class="col-lg-4">
+                    <img width="380px" height="250px" src="images/chopper.jpg" alt="">
+                    <h5 class="text-center mt-2">Helicopter Transportation</h5>
+                </div>
+                <div class="col-lg-4 ">
+                    <img width="380px" height="250px" src="images/giftshop.jpg" alt="">
+                    <h5 class="text-center mt-2">Giftshop</h5>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Package section -->
+
+        <section class="container mt-5 mb-5">
+            <h3 class="text-center mb-5 fw-bold">Our Package</h3>
+            <div>
+                <div class="row">
+                    <div class="col-lg-3 ">
+                        <div class="card border-0">
+                            <div class="card-body">
+
+                                <h3 class="fw-bold">$300</h3>
+                                <h4 class="fw-bold">Business fair</h4>
+                                <p class="text-muted">
+                                    <small> For most businesses event like book fair, craft fair.<br> <br>
+                                        <i class="far fa-check-circle text-primary"></i> Limited space access <br>
+                                        <i class="far fa-check-circle text-primary"></i> Secuirty facility<br>
+                                        <i class="far fa-check-circle text-primary"></i> Event support<br>
+                                        <i class="far fa-check-circle text-primary"></i> Decoration design<br>
+                                        <i class="far fa-check-circle text-primary"></i> Per day bill
+                                    </small>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-3"><small>Choose
+                                        plan</small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0">
+                            <div class="card-body">
+
+                                <h3 class="fw-bold">$500</h3>
+                                <h4 class="fw-bold">Wedding basic</h4>
+                                <p class="text-muted">
+                                    <small> For weddings with basic plan and limited item <br> <br>
+                                        <i class="far fa-check-circle text-primary"></i> Full space access <br>
+                                        <i class="far fa-check-circle text-primary"></i> Food arrangement<br>
+                                        <i class="far fa-check-circle text-primary"></i> Mangement support<br>
+                                        <i class="far fa-check-circle text-primary"></i> Decoration design<br>
+                                        <i class="far fa-check-circle text-primary"></i> Billed as shift
+                                    </small>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-3"><small>Choose
+                                        plan</small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0 " id="hot-package">
+                            <div class="card-body">
+
+                                <h3 class="fw-bold">$800</h3>
+                                <h4 class="fw-bold">Wedding plus</h4>
+                                <p>
+                                    <small> For most weddings with premium plans <br> <br>
+                                        <i class="far fa-check-circle"></i> Full space access<br>
+                                        <i class="far fa-check-circle"></i> Dedicated team<br>
+                                        <i class="far fa-check-circle"></i> Buffet food <br>
+                                        <i class="far fa-check-circle"></i> Premium Decoration<br>
+                                        <i class="far fa-check-circle"></i> Pay as plan
+
+                                    </small>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-light rounded-pill d-flex align-items-center justify-content-center m-3"
+                                    style="color: #ffc2c2;"><small>Choose
+                                        plan</small></a>
+
+                                <span
+                                    class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger p-2">
+                                    Hot
+
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0">
+                            <div class="card-body">
+
+                                <h3 class="fw-bold">$1200</h3>
+                                <h4 class="fw-bold">Corporate event</h4>
+                                <p class="text-muted">
+                                    <small> For most corporate business events
+                                        <br> <br>
+                                        <i class="far fa-check-circle text-primary"></i> Full space access <br>
+                                        <i class="far fa-check-circle text-primary"></i> Dedicated team
+                                        <br>
+                                        <i class="far fa-check-circle text-primary"></i> Buffet food<br>
+                                        <i class="far fa-check-circle text-primary"></i> Premium Decoration<br>
+                                        <i class="far fa-check-circle text-primary"></i> pay as plan
+
+                                    </small>
+                                </p>
+                                <a href="#"
+                                    class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center m-3"><small>Choose
+                                        plan</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
+{% endblock %}
