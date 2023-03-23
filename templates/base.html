@@ -33,8 +33,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-dark text-muted">
-            <div class="container ">
+        <nav class="navbar navbar-expand-lg  bg-dark text-muted">
+            <div class="container">
 
                 <a class="navbar-brand" href="{% url 'project-home' %}">
                     <img class="img-fluid rounded-circle" src="{% static 'projects/images/logo.jpg' %}" alt=""
@@ -75,6 +75,13 @@
                             <button class="btn btn-outline-light" type="submit">Search</button>
                         </form>
 
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link hover1 text-white" href="{% url 'logout' %}">Logout</a>
+                        </li>
+                    
+
+                        {% else %}
                         <li class="nav-item">
                             <a class="nav-link hover1 text-white" href="{% url 'login' %}">Login</a>
                         </li>
@@ -83,6 +90,9 @@
                         </li>
                     </ul>
 
+                    
+                    {% endif %}
+              
 
 
 
